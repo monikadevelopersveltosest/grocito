@@ -20,6 +20,7 @@ class Adminnew extends CI_Controller {
 
 	public function index()
 	{
+		echo "dfdf";die;
 		$data = array();
 
 		//$whr = " WHERE status = 1 and delivery_status = 4";
