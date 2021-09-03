@@ -20,7 +20,6 @@
                 <th>Email</th>
                 <th>Mobile_no</th>
                 <th>Address</th>
-                <th>Date</th>
               <!--  <th>Status</th> -->
                 <th>Action</th>                
               </tr>
@@ -32,14 +31,14 @@
               ?>
               <tr>
                 <td><?php echo $count; ?></td>
-                <td><?php  echo (!empty($getdata['user_fullname'])?$getdata['user_fullname']:'none'); ?></td>
+                <td><?php  echo (!empty($getdata['fname'])?$getdata['fname']:'none'); ?></td>
                 <td><?php  echo (!empty($getdata['u_email'])?$getdata['u_email']:'none'); ?></td>
                 <td><?php  echo (!empty($getdata['mobile'])?$getdata['mobile']:'none'); ?></td>
                 <td><?php  echo (!empty($getdata['address'])?$getdata['address']:'none'); ?></td>
-                <td><?php  echo (!empty($getdata['create_at'])?$getdata['create_date']:'none'); ?></td>
                 <td>
                     <!--<a href="<?php echo base_url() ?>adminnew/AddCustomer/<?php echo  $getdata['id']; ?>" title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> -->
-
+                  
+                  
                     <a href="javascript:void(0)" href-data="<?php echo  $getdata['id']; ?>" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
                 </td>
               </tr>
@@ -80,7 +79,7 @@
       $.ajax({
         type: "POST",
         url: "<?php echo base_url();?>adminnew/change_status",
-        data:{tablename:'users',id:id,status:3,whrcol:'id',whrstatuscol:'status',action:"Delete"},
+        data:{tablename:'users',id:id,status:3,whrcol:'id',whrstatuscol:'id',action:"Delete"},
         dataType:'json',
         success: function(response) {
           if (response.status == 1){
