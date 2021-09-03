@@ -79,7 +79,7 @@ function displayLocation(latitude,longitude){
     <?php } ?>
     <ol class="breadcrumb">
     	<li><a href="<?php echo base_url()?>admin"><i class="fa fa-dashboard"></i> Home</a></li>
-    	<li class=""><a href="<?php echo base_url()?>adminnew/Customerslist">Customers</a></li>
+    	<li class=""><a href="<?php echo base_url()?>adminnew/sellerlist">Customers</a></li>
     </ol>
   </section>
   <!-- Main content -->
@@ -98,13 +98,13 @@ function displayLocation(latitude,longitude){
           <?php if(isset($success) && !empty($success)){ 
              echo '<div class="alert alert-success alert-dismissible">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-close"></i></button><h4><i class="fa fa-spinner fa-spin"></i>'.$success.'</h4></div>';
-            echo '<meta http-equiv="refresh" content="2;url='.base_url('adminnew/Customerslist').'">';
+            echo '<meta http-equiv="refresh" content="2;url='.base_url('adminnew/sellerlist').'">';
             } ?>
   				<form role="form" enctype="multipart/form-data" method="post" action="">
   					<div class="col-md-6">
   							<div class="form-group">
                   <label>Name</label>
-                  <input type="text" class="form-control" name="first_name" value="<?php echo (!empty($customer_data) && !empty($customer_data['first_name']) ? $customer_data['first_name'] : "" )?>" required>
+                  <input type="text" class="form-control" name="fname" value="<?php echo (!empty($customer_data) && !empty($customer_data['fname']) ? $customer_data['fname'] : "" )?>" required>
                 </div>
                 <div class="form-group">
                   <label>Email-ID</label>
