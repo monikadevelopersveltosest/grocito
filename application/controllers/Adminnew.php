@@ -20,6 +20,7 @@ class Adminnew extends CI_Controller {
 
 	public function index()
 	{
+		//echo "dfdf";die;
 		$data = array();
 
 		//$whr = " WHERE status = 1 and delivery_status = 4";
@@ -517,7 +518,57 @@ class Adminnew extends CI_Controller {
 	 	$this->load->view('adminnew/footer');
 
 	 }
+	 public function orderlist()
+	{   
+		//echo "dfdf";die;
+	
+		$data = array();
+		$where = array();
 
+		$data['order_data'] = $this->Common_model->getAllRecordsOrderById("orders",'id','DESC',$where);
+	// 	p($data);
+		$this->load->view('adminnew/header');
+
+	 	$this->load->view('adminnew/orderlist',$data);
+
+	 	$this->load->view('adminnew/footer');
+
+	 }
+	 public function faqlist1()
+	 {   
+		 //echo "dfdf";die;
+	 
+		 $data = array();
+		 $where = array();
+ 
+		 $data['faq_data'] = $this->Common_model->getAllRecordsOrderById("faqs",'id','DESC',$where);
+	 // 	p($data);
+		 $this->load->view('adminnew/header');
+ 
+		  $this->load->view('adminnew/faqlist1',$data);
+ 
+		  $this->load->view('adminnew/footer');
+ 
+	  }
+ 
+
+	 public function addseller()
+	 {   
+		 //echo "dfdf";die;
+	 
+		// $data = array();
+		// $where = array();
+ 
+		// $data['order_data'] = $this->Common_model->getAllRecordsOrderById("orders",'id','DESC',$where);
+	 // 	p($data);
+		 $this->load->view('adminnew/header');
+ 
+		  $this->load->view('adminnew/addseller');
+ 
+		  $this->load->view('adminnew/footer');
+ 
+	  }
+ 
     	
 		//$data['rows'] = $this->Common_model->getwhere('dummyproduct',array());
 		//$this->load->view('adminnew/header');

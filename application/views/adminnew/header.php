@@ -163,18 +163,116 @@
 <aside class="main-sidebar">
   <section class="sidebar">
     <ul class="sidebar-menu" data-widget="tree">
-        <li> 
+        <li  > 
         <a href="<?php echo base_url();?>adminnew"><i class="fa fa-user"></i> <span>Dashboard</span></a> 
       </li>
-      <li> 
-        <a href="<?php echo base_url();?>adminnew/Customerslist"><i class="fa fa-user"></i> <span>User List</span></a> 
+      <li  > 
+        <a href="<?php echo base_url();?>adminnew/orderlist"><i class="fa fa-user"></i> <span>Orders</span></a> 
+      </li>
+      <li class="treeview"> 
+      <a href="#">
+            <i class="fa fa-user"></i>
+            <span>Users</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          
+        <ul class="treeview-menu">
+          <li>
+          <a href="<?php echo base_url();?>adminnew/sellerlist"><i class="fa fa-user"></i> <span>sellers</span></a> 
+
+          </li>
+          <li>
+          <a href="<?php echo base_url();?>adminnew/Customerslist"><i class="fa fa-user"></i> <span>Customers</span></a> 
+
+          </li>
+        
+        </ul>
       </li>
       <li> 
-        <a href="<?php echo base_url();?>adminnew/sellerlist"><i class="fa fa-user"></i> <span>saller List</span></a> 
+        <a href="<?php echo base_url();?>adminnew/productlist"><i class="fa fa-user"></i> <span>Subscription Plan</span></a> 
       </li>
       <li> 
-        <a href="<?php echo base_url();?>adminnew/productlist"><i class="fa fa-user"></i> <span>product List</span></a> 
+  <a href="<?php echo base_url();?>adminnew/productlist"><i class="fa fa-user"></i> <span>Subscribed Seller</span></a> 
       </li>
+      <li> 
+        <a href="<?php echo base_url();?>adminnew/productlist"><i class="fa fa-user"></i> <span>Payment Gateway</span></a> 
+      </li>
+      <li> 
+        <a href="<?php echo base_url();?>adminnew/productlist"><i class="fa fa-user"></i> <span>Business Type</span></a> 
+      </li>
+      <li> 
+        <a href="<?php echo base_url();?>adminnew/productlist"><i class="fa fa-user"></i> <span>Slider</span></a> 
+      </li>
+      <li> 
+        <a href="<?php echo base_url();?>adminnew/productlist"><i class="fa fa-user"></i> <span>Push Notification</span></a> 
+      </li>
+      <li> 
+        <a href="<?php echo base_url();?>adminnew/productlist"><i class="fa fa-user"></i> <span>Refer and Earn Commission</span></a> 
+      </li>
+      <li> 
+        <a href="<?php echo base_url();?>adminnew/productlist"><i class="fa fa-user"></i> <span>Payment History</span></a> 
+      </li>
+      <li class="treeview"> 
+      <a href="#">
+            <i class="fa fa-user"></i>
+            <span>Track Page View</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          
+        <ul class="treeview-menu">
+          <li>
+          <a href="<?php echo base_url();?>adminnew/sellerlist"><i class="fa fa-user"></i> <span>Store View</span></a> 
+
+          </li>
+          <li>
+          <a href="<?php echo base_url();?>adminnew/Customerslist"><i class="fa fa-user"></i> <span>Product View</span></a> 
+
+          </li>
+        
+        </ul>
+      </li>
+      <li>
+          <a href="<?php echo base_url();?>adminnew/faqlist1"><i class="fa fa-user"></i> <span>FAQ</span></a> 
+
+          </li>
+          <li>
+          <a href="<?php echo base_url();?>adminnew/Customerslist"><i class="fa fa-user"></i> <span>About Us</span></a> 
+
+          </li>
+          <li>
+          <a href="<?php echo base_url();?>adminnew/Customerslist"><i class="fa fa-user"></i> <span>Private Policy</span></a> 
+
+          </li>
+          <li>
+          <a href="<?php echo base_url();?>adminnew/Customerslist"><i class="fa fa-user"></i> <span>Terms and Condition</span></a> 
+
+          </li>
+          <li class="treeview"> 
+      <a href="#">
+            <i class="fa fa-user"></i>
+            <span>Help & Support</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          
+        <ul class="treeview-menu">
+          <li>
+          <a href="<?php echo base_url();?>adminnew/sellerlist"><i class="fa fa-user"></i> <span>Contact Number</span></a> 
+
+          </li>
+          <li>
+          <a href="<?php echo base_url();?>adminnew/Customerslist"><i class="fa fa-user"></i> <span>Email</span></a> 
+
+          </li>
+        
+        </ul>
+      </li>
+      
       
      <!-- <li class="treeview">
           <a href="#">
@@ -184,7 +282,7 @@
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>-->
-          <ul class="treeview-menu">
+        <!--  <ul class="treeview-menu">
             <li > 
               <a href="<?php echo base_url();?>adminnew/commonsettings"><i class="fa fa-circle-o"></i> <span>Common Setting</span></a> 
             </li>

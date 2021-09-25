@@ -1164,11 +1164,11 @@
                           <div class="form-group col-md-6">
                           <label>Years in business</label>
                             <select class="form-control" name="year_business">
-                              <option>Choose years in business range </option>
-                              <option <?php  if(!empty($shop_data['year_business']) && $shop_data['year_business']=='1-4'){echo "selected";}else{echo "";}?>>1-4</option>
-                              <option <?php  if(!empty($shop_data['year_business']) && $shop_data['year_business']=='5-8'){echo "selected";}else{echo "";}?>>5-8</option>
-                              <option <?php  if(!empty($shop_data['year_business']) && $shop_data['year_business']=='9-12'){echo "selected";}else{echo "";}?> >9-12</option>
-                              <option <?php  if(!empty($shop_data['year_business']) && $shop_data['year_business']=='13+'){echo "selected";}else{echo "";}?> >13+</option>
+                    <option>Choose years in business range </option>
+                 <option <?php  if(!empty($shop_data['year_business']) && $shop_data['year_business']=='1-4'){echo "selected";}else{echo "";}?>>1-4</option>
+                 <option <?php  if(!empty($shop_data['year_business']) && $shop_data['year_business']=='5-8'){echo "selected";}else{echo "";}?>>5-8</option>
+                   <option <?php  if(!empty($shop_data['year_business']) && $shop_data['year_business']=='9-12'){echo "selected";}else{echo "";}?> >9-12</option>
+                   <option <?php  if(!empty($shop_data['year_business']) && $shop_data['year_business']=='13+'){echo "selected";}else{echo "";}?> >13+</option>
                             </select>
                         </div>
                           <!-- <div class="col-md-6">
